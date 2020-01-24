@@ -1,6 +1,4 @@
-public class Dollar {
-	private int amount;
-
+public class Dollar extends Money {
 	public Dollar(final int amount) {
 		this.amount = amount;
 	}
@@ -10,7 +8,7 @@ public class Dollar {
 	}
 
 	public boolean equals(Object object) {
-		Dollar dollar = (Dollar) object;
-		return this.amount == dollar.amount;
+		Money money = (Money) object;
+		return this.amount == money.amount;
 	}
 }
